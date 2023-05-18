@@ -1,11 +1,13 @@
 # POBackend
 
-It takes about 1 week to provide this version, met the initial expectation.
-
-How to start the POBackend application
+How to start the POBackend application locally
 ---
-pre-request : java and maven
-
-1. Run `mvn clean install` to build this application
-1. Start application with `server config.yml`
+1. the machine needs java, JAVA_HOME and maven installed before building application
+1. Run `mvn clean install` to build your application
+1. Start application with `java -jar target/PObackend-1.0-SNAPSHOT.jar server config.yml`
 1. To check that your application is running enter url `http://localhost:8080`
+1. To check that your application is running enter url `http://localhost:8080/poitem/all`
+
+---
+Health Check
+To see your applications health enter url `http://localhost:8081/healthcheck`
